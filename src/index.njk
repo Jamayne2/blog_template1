@@ -30,7 +30,7 @@ layout : 'base.njk'
 
     {%- for post in collections.featured | reverse -%}
       {% include 'article-snippet.njk' %}
-    {%- endfor %}
+    {%- endfor -%}
 
     </ul>
   </div>

@@ -11,12 +11,12 @@ layout : 'base.njk'
 <ul role="list" class="articles__list flow">
   {%- for post in collections.post | reverse -%}
     {% include 'article-snippet.njk' %}
-  {%- endfor %}
+  {%- endfor -%}
 </ul>
 
 </div>
 
-{#<ul role="list" class="articles__list flow"><li>
+{# <ul role="list" class="articles__list flow"><li>
          <article class="snippet">
   <img src="/assets/blog/article-1.jpg" alt="This is a test" class="snippet__image">
   <h3 class="snippet__title"><a href="/blog/my-first-article/">My First Article</a></h3>
